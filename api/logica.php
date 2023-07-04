@@ -15,7 +15,7 @@ array_pop($array_historico_tratado); // eh feita a remoção do último intem do
 unset($_POST['historico']); // eliminar o valor do campo histórico do formulário enviado (GPT), para poder usar a superglobal novamente sem se preocupar com os valores do histórico
 $jogada_atual = array_keys($_POST)[0]; // pega o índice 0 (jogada, onde o jogador clicou) e coloca na variável $jogada_atual
 $array_historico_tratado[$jogada_atual] = $_POST[$jogada_atual]; // adidiona o valor da jogada atual ao array tratado para ficar completo com todas as informações
-$url = "http://localhost/test/4/index.php?"; // declara a variável url que será utilizada para o redirecionamento da página principal com os parâmetros na URL que poderam ser passados e conseguidos para usar como dados para o tratamento dos mesmo no index.php
+$url = "https://jogo-da-velha-kappa-dusky.vercel.app/api/index.php?"; // declara a variável url que será utilizada para o redirecionamento da página principal com os parâmetros na URL que poderam ser passados e conseguidos para usar como dados para o tratamento dos mesmo no index.php
 
 foreach ($array_historico_tratado as $posicao => $jogador) // começo de um laço que varre o array tratado tratando a posição e o jogador
 {
