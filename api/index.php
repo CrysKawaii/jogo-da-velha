@@ -63,7 +63,7 @@
     <div class="d-flex justify-content-center mt-5"> <!-- criação de uma div com as classes para o alinhamento dela e uma margem encima para não ficar muito colado no jogo -->
         <a class="btn btn-success text-center" href="index.php"><i class="fa-solid fa-arrows-rotate"></i> Reiniciar</a> <!-- aqui eh criado um link em forma de botão que sempre que cliado a página eh recarregada e o jogo eh reiniciado -->
     </div> <!-- fechamento da div -->
-    <?php if ($empate == 9 && $vencedor == 'ninguem') : ?> <!-- criação e inicializaçõa de uma estrutura condicional onde eh feita a checagem da variável $empate para ver se o valor dela chegou a nove que caso tenha chegado, isso quer dizer que os botões todos foram clicados e nõa houve ganhador nenum -->
+    <?php if ($empate == 9 && $ganhador == '') : ?> <!-- criação e inicializaçõa de uma estrutura condicional onde eh feita a checagem da variável $empate para ver se o valor dela chegou a nove que caso tenha chegado, isso quer dizer que os botões todos foram clicados e nõa houve ganhador nenum -->
         <script> // abertura da tag script onde eh executado os códigos em JavaScript (tive que usar para exibir os alertas)
             window.onload = function() // função anônima que será chamada automaticamente quando a página for recarregada que mostrará o alerta
             {
